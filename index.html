@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git Instruction</title>
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    
+    <!-- SEO -->
+	<meta name="description" content="Web page">
+	<meta name="keywords" content="html, webdev, MyroslavShymon">
+    <meta name="author" content="Myroslav Shymon">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="css/main.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+    <!--[if IE]>
+        <p>This text you can see only in Internet Explorer</p>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+        <p>You will see this text only in IE9 and more later version</p>
+    <![endif]-->
+    <div id="wrapper">
+        <header>
+            <h1><strong>Html5 and Css3</strong></h1>
+            <nav>
+                
+            </nav>
+        </header>
+        <!--<aside></aside>-->
+        <main>
+            <section>
+                <h3>Основные тэги с текстом</h3>
+                <article>
+                        <h5>Абривиатура: </h5>
+                        <abbr title="Союз Советских Социалистических Республик" >СССР</abbr>
+                </article>
+                <article>
+                    <h5>Контактные данные: </h5>
+                    <img src="" alt="">
+                    <address>
+                        <p>Номер телефона: 0965161124</p>
+                    </address>
+                </article>
+                <article>
+                    <h5> Форматирование текста: </h5>
+                    <b>text</b>
+                    <br>
+                    <i>text либо через em</i>
+                    <em>text </em> новее тега i
+                    <br>
+                    <s>text </s>зачёркнутый
+                    <br>
+                    <del>для указания редакторской правки </del>
+                </article>
+                <article>
+                    <h5>Как добавить Цитату и Сноску: </h5>
+                        <blockquote>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolores adipisci nam distinctio quis accusamus?
+                        </blockquote>
+                        <cite>http://www.asimovonline.com </cite>
+                        Тег cite помечает текст как цитату или сноску на другой материал.
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nobis cum laudantium iste modi, assumenda ab animi, enim accusantium, repellendus vitae? Nobis cupiditate, perferendis repudiandae incidunt itaque hic accusantium atque.</q>
+                </article>
+                <article>
+                    <h5>Добавить код на сайт HTML тег code: </h5>
+                    <code>
+                        function mouseCoords(e) {<br>
+                            // Для браузера IE<br>
+                            if (document.all)  { <br>
+                            x = event.x + document.body.scrollLeft;<br> 
+                            y = event.y + document.body.scrollTop; <br>
+                            // Для остальных браузеров<br>
+                            } else {<br>
+                            var x = e.pageX/5; // Координата X курсора<br>
+                            var y = e.pageY/5; // Координата Y курсора<br>
+                            }<br>
+                                var element = document.getElementById("coords");<br>
+                                var clas_h = x+"px",clas_w = y+"px";<br>
+                                element.style.cssText="height:"+clas_h+"; width:"+clas_w+";";<br>
+                            }  <br>
+                    </code>
+                </article>
+                <article>
+                    <h5>Горячие клавиши на HTML с помощью тега kbd: </h5>
+                    <kbd>Ctrl + C </kbd>-копировать  
+                </article>
+                <article>
+                    <h5>Форматирование текста в HTML тег small и strong: </h5>
+                    <small>Text</small>
+                    <strong>Text</strong>
+                </article>
+                <article>
+                    <h5>Регистр символа на HTML тег sub и sup: </h5>
+                    x<sup>2</sup><br>
+                    H<sub>2</sub>O
+                </article>
+                <article>
+                    <h5>Как сделать абзац на сайте тег p и pre: </h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, distinctio?</p><br>
+                    <pre>
+                        function mouseCoords(e) {
+                            // Для браузера IE
+                            if (document.all)  { 
+                            x = event.x + document.body.scrollLeft; 
+                            y = event.y + document.body.scrollTop; 
+                            // Для остальных браузеров
+                            } else {
+                            var x = e.pageX/5; // Координата X курсора
+                            var y = e.pageY/5; // Координата Y курсора
+                            }
+                                var element = document.getElementById("coords");
+                                var clas_h = x+"px",clas_w = y+"px";
+                                element.style.cssText="height:"+clas_h+"; width:"+clas_w+";";
+                            }  
+                    </pre>
+                </article>
+                <article>
+                    <h5>Строчный тег span в языке html: </h5>
+                    <p><span style="color: brown;">Lorem</span> ipsum dolor, sit amet consectetur adipisicing elit. Autem, distinctio?</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h5>Video:</h5> <br>   
+                    <!--<video src="media/videos/480p - (231) Metallica - For Whom the Bell Tolls (Live) [Cliff 'Em All] - YouTube.webm#t=8,31" controls preload="auto" poster="media/pictures/cliff.jpg">
+                    </video>
+                    <video src="media/videos/480p - (231) Metallica - For Whom the Bell Tolls (Live) [Cliff 'Em All] - YouTube.webm#t=8" controls preload="metadata" poster="media/pictures/cliff.jpg">
+                    </video>
+                    <video src="media/videos/480p - (231) Metallica - For Whom the Bell Tolls (Live) [Cliff 'Em All] - YouTube.webm#t=,31" controls preload="metadata" poster="media/pictures/cliff.jpg">
+                    </video>-->
+                    <video src="media/videos/480p - (231) Metallica - For Whom the Bell Tolls (Live) [Cliff 'Em All] - YouTube.webm" controls preload="metadata" poster="media/pictures/cliff.jpg">
+                    <!--    <source src="movie.org" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
+                    </video>
+                    <p>autoplay для автовоспроизвидения</p>
+                    <p>loop для зациклености</p>
+                    <p>muted нет аудио изначально</p>
+                </article>
+                <article>
+                    <h5>Audio:</h5><br>
+                    <audio src="media/audio/01. War Pigs.mp3" preload="metadata" controls>
+                        <!--<source>-->
+                    </audio>
+                    <p>autoplay для автовоспроизвидения</p>
+                    <p>loop для зациклености</p>
+                    <p>muted нет аудио изначально</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h5>Frames:</h5><br>
+                    <iframe src="https://www.wikipedia.org/" ></iframe> 
+                </article>
+            </section>
+            <section>
+                <h5>Images: </h5>
+                <img src="media/pictures/spring.jpg" alt="kartinka" id="first_pic">
+                <br>
+                <picture>
+                    <source srcset="media/pictures/spring300.jpg 1x, media/pictures/spring600.jpg 2x" media="(max-width:575px)">
+
+                    <img src="media/pictures/spring.jpg" alt="kartinka" id="first_pic" srcset="media/pictures/spring1024.jpg 2x">
+                </picture>
+                <figure>
+                    <img src="media/pictures/spring.jpg" alt="kartinka" id="first_pic">
+                    <figcaption style="text-align: center;">Весна на дворе</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h5>Table:</h5>
+                <table>
+                    <tr>
+                      <td>Front-end</td>
+                    </tr>
+                  </table>
+                  <hr>
+                
+                  <!-- Table row with data -->
+                  <table>
+                    <tr>
+                      <td>Front-end</td>
+                      <td>Back-end</td>
+                      <td>Full-stack</td>
+                      <td>QA</td>
+                    </tr>
+                  </table>
+                  <hr>
+                
+                  <!-- Table column with data -->
+                  <table>
+                    <tr>
+                      <td>Front-end</td>
+                    </tr>
+                    <tr>
+                      <td>Back-end</td>
+                    </tr>
+                    <tr>
+                      <td>Full-stack</td>
+                    </tr>
+                    <tr>
+                      <td>QA</td>
+                    </tr>
+                  </table>
+                  <hr>
+                
+                  <!-- Simple example of table -->
+                  <table>
+                    <tr>
+                      <td>Front-end</td>
+                      <td>1 Person</td>
+                    </tr>
+                    <tr>
+                      <td>Back-end</td>
+                      <td>7 Persons</td>
+                    </tr>
+                    <tr>
+                      <td>Full-stack</td>
+                      <td>2 Persons</td>
+                    </tr>
+                    <tr>
+                      <td>QA</td>
+                      <td>5 Persons</td>
+                    </tr>
+                  </table>
+                  <hr>
+                
+                  <!-- Table with caption -->
+                  <table>
+                    <caption>Team members list</caption>
+                    <tr>
+                      <td>Front-end</td>
+                      <td>1 Person</td>
+                    </tr>
+                    <tr>
+                      <td>Back-end</td>
+                      <td>7 Persons</td>
+                    </tr>
+                    <tr>
+                      <td>Full-stack</td>
+                      <td>2 Persons</td>
+                    </tr>
+                    <tr>
+                      <td>QA</td>
+                      <td>5 Persons</td>
+                    </tr>
+                  </table>
+                  <hr>
+                
+                  <!-- Table with semantic sections -->
+                  <table>
+                
+                    <caption>Team members list</caption>
+                
+                    <thead>
+                      <tr>
+                        <td>Speciality</td>
+                        <td>Quantity</td>
+                      </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr>
+                        <td>Front-end</td>
+                        <td>1 Person</td>
+                      </tr>
+                      <tr>
+                        <td>Back-end</td>
+                        <td>7 Persons</td>
+                      </tr>
+                      <tr>
+                        <td>Full-stack</td>
+                        <td>2 Persons</td>
+                      </tr>
+                      <tr>
+                        <td>QA</td>
+                        <td>5 Persons</td>
+                      </tr>
+                    </tbody>
+                
+                    <tfoot>
+                      <tr>
+                        <td></td>
+                        <td>15</td>
+                      </tr>
+                    </tfoot>
+                
+                  </table>
+                  <hr>
+                
+                  <!-- Colspan in tfoot and th tag for table head -->
+                  <table>
+                
+                    <caption>Team members list</caption>
+                
+                    <thead>
+                      <tr>
+                        <th>Speciality</th>
+                        <th>Quantity</th>
+                      </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr>
+                        <td>Front-end</td>
+                        <td>1 Person</td>
+                      </tr>
+                      <tr>
+                        <td>Back-end</td>
+                        <td>7 Persons</td>
+                      </tr>
+                      <tr>
+                        <td>Full-stack</td>
+                        <td>2 Persons</td>
+                      </tr>
+                      <tr>
+                        <td>QA</td>
+                        <td>5 Persons</td>
+                      </tr>
+                    </tbody>
+                
+                    <tfoot>
+                      <tr>
+                        <td colspan="2">15</td>
+                      </tr>
+                    </tfoot>
+                
+                  </table>
+                  <hr>
+                  Список определений
+                  <dl>
+                    <dt>Термин 1</dt>
+                     <dd>Определение термина 1</dd>
+                    <dt>Термин 2</dt>
+                     <dd>Определение термина 2</dd>
+                  </dl>
+                  
+            </section>
+            <section>
+                <h5>Forms</h5>
+
+                <form action="formHandler.php" name="simple form" autocomplete="on">
+
+                  <input type="text" /><br>
+              
+                  <select>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                  </select><br>
+              
+                  <textarea rows="10" cols="45" name="text"></textarea><br>
+              
+                  <input type="submit"><br>
+              
+                </form>
+                <hr>
+              
+                <!-- Fieldset & label -->
+                <form action="formHandler.php" name="simple form2">
+              
+                  <fieldset>
+              
+                  <legend>Simple form legend</legend>
+              
+                  <input type="text" /><br>
+              
+                  <select>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                  </select><br>
+              
+                  <textarea rows="10" cols="45" name="text"></textarea><br>
+              
+                  <input type="submit"><br>
+              
+                  </fieldset>
+              
+                </form>
+                <hr>
+              
+                <!-- Inner fieldset & label -->
+                <form action="formHandler.php" name="simple form3">
+              
+                  <fieldset>
+                    <legend>Personal data</legend>
+                    <input type="text" /><br>
+                    <select>
+                      <option value="Front-end">Front-end</option>
+                      <option value="Back-end">Back-end</option>
+                    </select><br>
+                  </fieldset>
+              
+                  <fieldset>
+                    <legend>Personal Message</legend>
+                    <textarea rows="10" cols="45" name="text"></textarea><br>
+                  </fieldset>
+              
+                  <input type="submit"><br>
+              
+                </form>
+                <hr>
+              
+                <!-- Form element label -->
+                <label for="username">Username</label>
+                <input id="username"><br>
+              
+                <label>
+                  Password
+                  <input type="password">
+                </label>
+                <hr>
+              
+                <!-- Result form -->
+                <form action="formHandler.php" name="simple form3">
+              
+                  <fieldset>
+                    <legend>Personal data</legend>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" /><br>
+                    <label for="speciality">Choose your speciality</label>
+                    <select id="speciality">
+                      <option value="Front-end">Front-end</option>
+                      <option value="Back-end">Back-end</option>
+                    </select><br>
+                  </fieldset>
+              
+                  <fieldset>
+                    <legend>Personal Message</legend>
+                    <label for="message">Enter your message</label>
+                    <textarea id="message" rows="10" cols="45" name="text"></textarea><br>
+                  </fieldset>
+              
+                  <input type="submit"><br>
+              
+                </form>
+                <hr>
+              
+                <!-- Textarea -->
+                <textarea rows="10" cols="45"></textarea><br>
+                <textarea rows="5" cols="20" name="test"></textarea><br>
+                <textarea rows="5" cols="20" autofocus></textarea><br>
+                <textarea rows="5" cols="20" disabled></textarea><br>
+                <textarea rows="5" cols="20" readonly>This text you can't change</textarea><br>
+                <textarea rows="5" cols="20" placeholder="your message..."></textarea><br>
+                <textarea rows="5" cols="20" maxlength="5"></textarea><br>
+                <textarea rows="5" cols="20" required></textarea><br>
+                <hr>
+              
+                <!-- Required attribute -->
+                <form>
+                  <textarea rows="5" cols="20" required></textarea><br>
+                  <input type="submit" value="Send">
+                </form>
+                <hr>
+              
+                <!-- Select -->
+                <select>
+                  <option value="Front-end">Front-end</option>
+                  <option value="Back-end">Back-end</option>
+                </select>
+                <hr>
+              
+                <!-- Select with optgroup -->
+                <select>
+                  <optgroup label="Speciality">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                  </optgroup>
+              
+                  <optgroup label="Direction">
+                    <option value="Mobile">Mobile development</option>
+                    <option value="Node">Node.js development</option>
+                  </optgroup>
+                </select>
+                <hr>
+              
+                <!-- Multiple select -->
+                <select multiple>
+                  <option value="Front-end">Front-end</option>
+                  <option value="Back-end">Back-end</option>
+                </select>
+                <hr>
+              
+                <!-- Different options -->
+                <select>
+                  <option value="Front-end">Front-end</option>
+                  <option value="Back-end" label="Back-end">
+                  <option value="sel" selected>Selected</option>
+                  <option value="dis" disabled>Disabled</option>
+                </select>
+                <hr>
+
+            </section>
+            <section>
+              <h5>Links</h5>
+              <!-- Simple link -->
+              <a href="https://youtube.com/YauhenKavalchuk">Youtube</a>
+              <hr>
+
+              <!-- Download link -->
+              <a href="test.txt" download>Download</a>
+              <hr>
+
+              <!-- Open link in new tab -->
+              <a href="https://youtube.com/YauhenKavalchuk" target="_blank">Youtube</a>
+              <hr>
+
+              <!-- Open link in new tab -->
+              <a href="tel:+123-32-23">+123-32-23</a><br>
+              <a href="mailto:test@test.com">My e-mail</a><br>
+              <a href="skype:test">Skype Call</a><br>
+              <hr>
+
+              <!-- Anchor link -->
+              <a href="#bottom">Go to Bottom</a>
+              <hr>
+
+              <!-- Simple buttons -->
+              <button type="button">Button</button>
+              <button type="submit">Button</button>
+              <button type="reset">Button</button>
+              <hr>
+
+              <!-- Button with autofocus -->
+              <button type="button" autofocus>Button</button>
+              <hr>
+
+              <!-- Disabled Button -->
+              <button type="button" disabled>Button</button>
+              <hr>
+
+              <!-- Necessary div with id -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p id="bottom">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+              <a href="second.html" target="_blank">Lorem</a>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
